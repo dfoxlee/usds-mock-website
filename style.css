@@ -1,0 +1,690 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #012981;
+    --red:  #800100;
+    --gold: #7F8020;
+}
+
+img {
+    width: 100px;
+}
+
+
+/* ---------------------------BREAKPOINTS--------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+/* ---------------------------HEADER--------------------------- */
+
+.logo-title {
+    flex-direction: column;
+    margin: 100px auto;
+}
+
+#usds-logo {
+    width: 300px !important;
+}
+
+#phrase-container {
+    justify-items: center;
+    grid-template-columns: 100px !important;
+}
+
+#middle-header-text {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.menu {
+    position: fixed;
+    right: -600px;
+    background-color: rgba(0,0,0,0.9);
+    height: 100vh;
+    top: 0;
+    width: 100%;
+}
+
+.fa-xmark {
+    display: none;
+}
+
+.fa-bars {
+    display: block;
+}
+
+.fa-solid {
+    font-size: 50px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1;
+    color: var(--red);
+}
+
+.fa-solid:hover {
+    cursor:pointer;
+}
+
+.menu ul {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items:baseline !important;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+/* ---------------------------ABOUT--------------------------- */
+
+.about-container {
+    grid-template-columns: 80% !important;
+    justify-content: center;
+}
+
+#usds-pic {
+    margin-top: 20px;
+}
+
+/* ---------------------------SERVICES--------------------------- */
+
+.service-col {
+    grid-template-columns: 100% !important;
+    grid-template-areas:
+        "content-1"
+        "content-2"
+        "content-3"
+        "content-4"
+        "content-5"
+        "content-6" !important;
+}
+
+
+
+/* ---------------------------BRANDS--------------------------- */
+
+/* ---------------------------LOCATIONS--------------------------- */
+
+.location-grid {
+    grid-template-columns: 1fr !important;
+    margin: 30px 0 50px;
+}
+
+#usds-map {
+    width: 300px !important;
+}
+
+.indiana-background h3 {
+    height: 40px !important;
+    width: 200px !important;
+    font-size: 20px !important;
+    padding-top: 11px !important;
+}
+
+#usds-map {
+    width: 80% !important;
+}  
+
+/* ---------------------------CONTACT--------------------------- */
+
+/* ---------------------------FOOTER--------------------------- */
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+
+/* ---------------------------HEADER--------------------------- */
+
+.menu {
+    position: fixed;
+    right: -600px;
+    background-color: rgba(0,0,0,0.85);
+    height: 100vh;
+    top: 0;
+    width: 400px;
+}
+
+.logo-title {
+    margin: 100px auto;
+    flex-direction: column;
+}
+
+#usds-logo {
+    width: 400px !important;
+}
+
+.fa-xmark {
+    display: none;
+}
+
+.fa-bars {
+    display: block;
+}
+
+.fa-solid {
+    font-size: 50px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1;
+    color: var(--red);
+}
+
+.fa-solid:hover {
+    cursor: pointer;
+}
+
+
+.menu ul {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items:baseline !important;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+#middle-header-text {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+/* ---------------------------ABOUT--------------------------- */
+
+/* ---------------------------SERVICES--------------------------- */
+
+.service-col {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-areas:
+        "content-1 content-2"
+        "content-3 content-4"
+        "content-5 content-6" !important;
+    width: 70% !important;
+    gap: 20px 30px !important;
+    justify-content: center;
+}
+
+/* ---------------------------BRANDS--------------------------- */
+
+/* ---------------------------LOCATIONS--------------------------- */
+
+.location-grid {
+    grid-template-columns: 1fr !important;
+    margin: 30px 0 50px;
+}
+
+#usds-map {
+    width: 300px !important;
+}
+
+#usds-map {
+    width: 80% !important;
+}  
+
+/* ---------------------------CONTACT--------------------------- */
+
+/* ---------------------------FOOTER--------------------------- */
+
+}
+
+@media only screen and (min-width: 1201px) {
+
+/* ---------------------------HEADER--------------------------- */
+
+#middle-header-text {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.fa-solid {
+    display: none !important;
+}
+
+/* ---------------------------ABOUT--------------------------- */
+
+/* ---------------------------SERVICES--------------------------- */
+
+/* ---------------------------BRANDS--------------------------- */
+
+/* ---------------------------LOCATIONS--------------------------- */
+
+/* ---------------------------CONTACT--------------------------- */
+
+/* ---------------------------FOOTER--------------------------- */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------HEADER--------------------------- */
+
+header {
+    background-image: linear-gradient(.25turn, rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('./resources/drawing-handgun-iwb.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+#usds-logo {
+    width: 150px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    letter-spacing: .2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: right;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 20px 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-saying {
+    text-align: center;
+}
+
+.header-title h2 {
+    letter-spacing: 0.4rem;
+    font-weight: 300;
+    padding: 10px 20px;
+}
+
+#phrase-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:center;
+    margin: 0 auto 20px;
+    max-width: 800px;
+}
+
+
+/* ---------------------------ABOUT--------------------------- */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.title-container  h2 {
+    text-align: center;
+    margin:30px auto 3px;
+    letter-spacing: 2px;
+}
+
+.title-underline {
+    height: 2px;
+    margin: 0 auto;
+    background-color: #dcdcdc;
+}
+
+.about-underline {
+    width: 70px;
+}
+
+#about-words {
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    transition: box-shadow .3s;
+}
+
+#about-words p {
+    padding: 20px 40px 20px;
+    line-height: 1.4;
+    color: #808080;
+}
+
+#about-words:hover {
+    box-shadow: 0  0 8px 3px #dcdcdc ;
+}
+
+#usds-pic {
+    width: 80%;
+    max-width: 500px;
+    min-width: 200px;
+    border-radius: 3px;
+}
+
+/* ---------------------------SERVICES--------------------------- */
+
+.services-container {
+    margin-bottom: 80px;
+}
+
+.services-underline {
+    width: 110px;
+}
+
+.service-col {
+    display: grid;
+    margin: 20px auto 0;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 10px;
+    grid-template-areas:
+        "content-1 content-2 content-3"
+        "content-4 content-5 content-6";
+    max-width: 900px;
+}
+
+.service {
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 250px;
+    box-shadow: -5px 5px 5px 0 #808080;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    transition: top .7s, right .7s;
+}
+.service:hover {
+    cursor: pointer;
+    position: relative;
+    top: -5px;
+    right: -5px;
+    box-shadow: -10px 10px 10px 0 #808080;
+}
+
+.service:active {
+    position:initial;
+}
+
+.service h3 {
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+
+.service p {
+    margin-top: 10px;
+    padding: 0 35px;
+    line-height: 1.4;
+    font-weight: 200;
+    display: none;
+}
+
+.services-container p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.glock {
+    grid-area: content-2;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./resources/glock-armorer.jpg");
+}
+
+.gunsmith {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./resources/gunsmith.jpg");
+}
+
+.transfers {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./resources/ffl-transfer.jpg");
+}
+
+.cerakote {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./resources/cerakote.jpg");
+}
+
+.stippling {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./resources/glock-stippling.jpg");
+}
+
+.aero {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/resources/aero-precision.jpg");
+}
+
+/* ---------------------------BRANDS--------------------------- */
+
+.brands-underline {
+    width: 240px;
+}
+
+.brands-scroll {
+    display: flex;
+    overflow: auto;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto 80px;
+    align-items: center;
+}
+
+.brand-pic {
+    margin: 0 30px;
+}
+
+/* ---------------------------LOCATIONS--------------------------- */
+
+.location-underline {
+    width: 130px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    margin: 30px auto 50px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.indiana-background {
+    background-image: url("./resources/indiana-map.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indiana-background h3 {
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    background-color: var(--blue);
+    margin: 0 0 30px 40px;
+    padding: 6px 0 0;
+    font-size: 30px;
+    letter-spacing: 0.3rem;
+    border-radius: 40px;
+    font-weight: 350;
+    transition: letter-spacing 0.5s;
+}
+
+.indiana-background h3:hover {
+    letter-spacing: 0.5rem;
+}
+
+.indiana-background h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+#usds-map {
+    width: 400px;
+    height: 400px;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
+}  
+
+/* ---------------------------CONTACT--------------------------- */
+
+.contact-underline {
+    width: 100px;
+}
+
+.contact-container p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-comp {
+    min-width: 300px;
+    margin: 2px auto;
+}
+
+.name-email {
+    margin: 5px auto;
+    padding: 3px 0 0 15px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 30px;
+    border-color: #808080;
+    letter-spacing: 0.1rem;
+}
+
+.location-label {
+    margin-top: 10px;
+}
+
+.location-drop {
+    height: 30px;
+    font-size: 15px;
+    padding: 4px 20px 0;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 200;
+    letter-spacing: 0.15rem;
+}
+
+.contact-container form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1.8px solid #808080;
+    line-height: 1.4;
+}
+
+.submit-btn {
+    height: 40px;
+    width: 150px;
+    background-color: var(--red);
+    border: 0;
+    border-radius: 8px;
+    font-size: 25px;
+    margin: 20px auto 80px;
+    padding: 5px 0 0 0;
+    font-weight: 500;
+    color: white;
+    transition: height .3s, width .3s;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+}
+
+.submit-btn:active {
+    height: 40px;
+    width: 150px;
+}
+
+/* ---------------------------FOOTER--------------------------- */
+
+footer {
+    background-color: black;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 1200px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.footer-container h4 {
+    margin: 20px auto 30px;
+    font-weight: 300;
+}
+
+.footer-container img {
+    width: 50px;
+
+    margin: 30px 10px 0 10px;
+}
+
